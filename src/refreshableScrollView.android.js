@@ -180,7 +180,7 @@ export default class RefreshableScrollView extends ScrollView {
         showRefreshHeader: true
       })
       setTimeout(() => {
-        if (this._scrollview.scrollTo) {
+        if (this._scrollview) {
           this._scrollview.scrollTo({ x: 0, y: this.props.refreshViewHeight, animated: true })
         }
         this.setState({
